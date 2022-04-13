@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MagicMirror²</title>
+  <meta name="google" content="notranslate" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="fonts/roboto.css">
+  <!-- custom.css is loaded by the loader.js to make sure it's loaded after the module css files. -->
+
+  <script type="text/javascript">
+    var version = "#VERSION#";
+  </script>
+</head>
+<body>
+<div id="simpleList" class="list-container">
+  <div class="col col-item-1">
+    <div class="region top left">
+      <div class="container"></div>
+    </div>
+  </div>
+  <div class="col col-item-2"></div>
+  <div class="col col-item-3">
+    <div class="region fullscreen above">
+      <div class="container"></div>
+    </div>
+  </div>
+  <div class="col col-item-4"></div>
+  <div class="col col-item-5"></div>
+  <div class="col col-item-6"></div>
+  <div class="col col-item-7"></div>
+  <div class="col col-item-8"></div>
+  <div class="col col-item-9">
+    <div class="region top right">
+      <div class="container"></div>
+    </div>
+  </div>
+  <div class="col col-item-10"></div>
+  <div class="col col-item-11"></div>
+  <div class="col col-item-4"></div>
+  <div class="col col-item-12">
+    <a id="homeBeautyLink">
+      <div class="region lower third">
+        <div class="container"><br /></div>
+      </div>
+      <span class="hello-box">Tap to Start</span>
+    </a></div>
+  <div class="col col-item-14"></div>
+  <div class="col col-item-15"></div>
+  <div class="col col-item-16"></div>
+  <div class="col col-item-17"></div>
+  <div class="col col-item-18"></div>
+  <div class="col col-item-19"></div>
+  <div class="col col-item-20"></div>
+  <div class="col col-item-21"></div>
+  <div class="col col-item-22"></div>
+  <div class="col col-item-23"></div>
+  <div class="col col-item-24"></div>
+  <div class="col col-item-46"></div>
+  <div class="col col-item-47"></div>
+  <div class="col col-item-48"></div>
+  <div class="col col-item-25"></div>
+  <div class="col col-item-49"></div>
+  <div class="col col-item-50"></div>
+  <div class="col col-item-51"></div>
+  <div class="col col-item-52"></div>
+  <div class="col col-item-53"></div>
+  <div class="col col-item-54"></div>
+  <div class="col col-item-55"></div>
+  <div class="col col-item-56"></div>
+  <div class="col col-item-57"></div>
+  <div class="col col-item-58"></div>
+  <div class="col col-item-59"></div>
+  <div class="col col-item-60"></div>
+  <div class="col col-item-26">
+    <div class="region bottom bar">
+      <div class="container"></div>
+      <div class="region bottom left">
+        <div class="container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col col-item-27"></div>
+  <div class="col col-item-28">
+    <div class="region fullscreen below">
+      <div class="container"></div>
+    </div>
+  </div>
+  <div class="col col-item-29"></div>
+  <div class="col col-item-30"></div>
+  <div class="col col-item-31"></div>
+  <div class="col col-item-32">
+    <div class="region middle center">
+      <div class="container"></div>
+    </div>
+  </div>
+  <div class="col col-item-33"></div>
+  <div class="col col-item-34">
+    <div class="region bottom center">
+      <div class="container"></div>
+    </div>
+  </div>
+  <div class="col col-item-35"></div>
+  <div class="col col-item-36">
+    <div class="region bottom right">
+      <div class="container"></div>
+    </div>
+  </div>
+  <div class="col col-item-37">
+    <div class="region upper third">
+      <div class="container"></div>
+    </div>
+  </div>
+  <div class="col col-item-38"></div>
+  <div class="col col-item-39"></div>
+  <div class="col col-item-40">
+    <a id="galleryLink">
+      <div class="img-wrap">
+        <img src="fonts/b.png" alt="space">
+      </div>
+      <span>3D Art Gallery</span>
+    </a>
+  </div>
+  <div class="col col-item-41"></div>
+  <div class="col col-item-42">
+    <div class="region top bar">
+      <div class="container"></div>
+      <div class="region top center">
+        <div class="container"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col col-item-43"></div>
+  <div class="col col-item-44"></div>
+  <div class="col col-item-45"></div>
+</div>
+
+<!-- Sortable.js -->
+<script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
+<script type="text/javascript" src="socket.io/socket.io.js"></script>
+<script type="text/javascript" src="vendor/node_modules/nunjucks/browser/nunjucks.min.js"></script>
+<script type="text/javascript" src="js/defaults.js"></script>
+<script type="text/javascript" src="#CONFIG_FILE#"></script>
+<script type="text/javascript" src="vendor/vendor.js"></script>
+<script type="text/javascript" src="modules/default/defaultmodules.js"></script>
+<script type="text/javascript" src="js/logger.js"></script>
+<script type="text/javascript" src="translations/translations.js"></script>
+<script type="text/javascript" src="js/translator.js"></script>
+<script type="text/javascript" src="js/class.js"></script>
+<script type="text/javascript" src="js/module.js"></script>
+<script type="text/javascript" src="js/loader.js"></script>
+<script type="text/javascript" src="js/socketclient.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
